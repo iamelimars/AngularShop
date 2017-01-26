@@ -1,0 +1,60 @@
+$icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+// bower:scss
+@import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+/* .browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+ */
+ body, html {
+     height: 100%;
+     font-family: 'Raleway', sans-serif;
+     font-weight: 100;
+ }
+#hero {
+  margin-top: -75px;
+  height: 700px;
+  background: url("/images/parkinglot.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.navbar {
+  background-color: black;
+  border-color: transparent;
+  color: black;
+  .navbar-brand {
+    font-size: 13px;
+  }
+  .nav li a {
+    font-size: 12px;
+  }
+  .navbar-toggle {
+      border-color: transparent;
+      &:hover {
+        background-color: transparent;
+      }
+  }
+  .navbar-collapse {
+    background: black;
+  }
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+
+
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+}
